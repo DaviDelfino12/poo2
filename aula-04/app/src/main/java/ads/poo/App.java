@@ -20,14 +20,29 @@ public class App {
 
         int valor = teclado.nextInt();
         int moeda = 0;
+        int[] moedas = new int[6];
 
         while (valor != 0) {
+                if (valor == 1) {
+                    moedas[0]++;
+                } else if (valor == 5) {
+                    moedas[1]++;
+                } else if (valor == 10) {
+                    moedas[2]++;
+                } else if (valor == 25) {
+                    moedas[3]++;
+                } else if (valor == 50) {
+                    moedas[4]++;
+                } else if (valor == 100) {
+                    moedas[5]++;
+                }
             moeda = valor + moeda;
             System.out.println("Qual a próxia moeda. (Digite 0 quando acabar suas moedas.)");
             valor = teclado.nextInt();
         }
 
         System.out.println("Você tem " + (moeda/100.00) + " reais.");
+
 
     }
 }
