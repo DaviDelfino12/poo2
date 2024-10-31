@@ -7,30 +7,17 @@ public class App{
         
         //interface do usuário
 
-        Carro c = new Carro();
+        Estudante d = new Estudante("Davi Delfino", "220274839", "ADS");
 
-        System.out.println(c.obterVelocidade());
+        System.out.println(d);
 
-       
-        c.acelerar(100);
-        c.acelerar(50);
-        c.acelerar(150);
+        System.out.println(d.getTotal());
 
-        System.out.println(c.obterVelocidade());
+        Estudante n = new Estudante("Natã", "20042024", "ADS");
 
-        c.frear(100);
-        c.frear(150);
+        System.out.println(n);
 
-        System.out.println(c.obterVelocidade());
-
-
-        Pessoa d = new Pessoa("Davi", "133.006.639-11");
-        Pessoa v = new Pessoa("Vitoria", "143.556.789-11");
-
-       
-        System.out.println(d.imprimePessoa());
-        System.out.println(v.imprimePessoa());
-
+        System.out.println(n.getTotal());
     }
 
 
